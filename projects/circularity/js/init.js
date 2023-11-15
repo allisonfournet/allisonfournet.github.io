@@ -34,7 +34,7 @@ var circles = []
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        for (var i = 0; i < 500; i++) {
+        for (var i = 0; i < 100; i++) {
             drawCircle()
             }
             
@@ -49,12 +49,13 @@ var circles = []
         and check to see if it has drifted off the screen.         
         */
         function update() {
-            // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[0]);
-            physikz.updatePosition(circles[1]);
-            physikz.updatePosition(circles[2]);
-            physikz.updatePosition(circles[3]);
-            physikz.updatePosition(circles[4]);
+            // TODO 4 / 8 : Update the circle's position //
+            for (var i = 0; i < circles.length; i++) {
+                physikz.updatePosition(circles[i]);
+                // code to repeat using i
+                 
+              }
+              
 
 
             
