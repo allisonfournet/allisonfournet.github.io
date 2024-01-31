@@ -58,11 +58,16 @@ else {currentShape.goodBehavior = 'spin'}
   }
 
   // TODO 3-a: add a function that handles the static display type
-  
+  function handleStatic(data) {
+    setBackgroundWithObject(data);
+    animationDetails.displayType = 1;
+  }
 
   // TODO 4-a: add a function that handles the good display type
-  
-
+  function handleGood(color, shape, repeat) {
+    setBackgroundWithSimple(color, shape, repeat);
+    animationDetails.displayType = 2;
+    }
   // TODO 5-a: add a function that handles the bad display type
   
 
@@ -72,12 +77,14 @@ else {currentShape.goodBehavior = 'spin'}
 
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
-    
+    handleStatic(dataShapes[currentIndex])
+    animationDetails.displayType = 1
   }
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-    
+    var currentShape = dataShapes[currentIndex];
+    handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
   function badDisplay() {
