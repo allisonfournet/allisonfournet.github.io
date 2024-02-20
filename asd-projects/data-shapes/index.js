@@ -69,10 +69,11 @@ else {currentShape.goodBehavior = 'spin'}
     animationDetails.displayType = 2;
     }
   // TODO 5-a: add a function that handles the bad display type
-  function handleBad(data, repeat) {}
+  function handleBad(data, repeat) {
     repeat += 1;
     setBackgroundWithMixed(data, repeat);
     animationDetails.displayType = 3;
+  }
   /////////////////////////////////////////////////
   // BUTTON HANDLERS BELOW HERE (3-b, 4-b, 5-b) ///
   /////////////////////////////////////////////////
