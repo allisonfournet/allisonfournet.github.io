@@ -116,7 +116,7 @@ function reddify(rgbArray) {
 
 // TODO 6: Create more filter functions
 function decreaseBlue(rgbArray) {
-  rgbArray[BLUE] = keepInBounds(rgbArray[BLUE] - 50)
+  rgbArray[BLUE] = keepInBounds(rgbArray[BLUE] + 50)
 }
 
 
